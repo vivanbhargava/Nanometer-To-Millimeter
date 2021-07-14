@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Nanometer to Millimeter</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Nanometer</label>
+            <input id="inputnano" type="number" placeholder="Nanometer" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Millimeter: <span id="outputmilli"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputmilli").innerHTML = valNum/1e+6;
+        }
+    </script>
+
+</body></html>
